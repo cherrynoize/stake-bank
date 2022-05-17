@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>StakeBank GUI</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="./bank.js"></script>
+  </head>
+
+  <body class="container">
+    <h1 class="page-header">StakeBank simple GUI | 0.1</h1>
+
+    <div class="row">
+      <h3 class="sub-header">Transfer</h3>
+      <div><label id="addr"></label></div>
+      <div style="height: 40px;">
+        <form class="form-inline" role="form">
+            <label for="amount">Amount: </label>
+            <input class="form-control" id="amount" placeholder="Input Ether amount"/>
+          <a href="#" onclick="deposit()" class="btn btn-primary">Deposit</a>
+          <a href="#" onclick="withdraw()" class="btn btn-primary">Withdraw</a>
+          <a href="#" onclick="pull()" class="btn btn-primary">Pull</a>
+          <a href="#" onclick="max()" class="btn btn-primary">Max</a>
+        </form>
+      </div>
+      <div><label id="timer"></label></div>
+      <div><label id="period"></label></div>
+      <div><label id="balance"></label></div>
+     </div>
+  </body>
+</head>

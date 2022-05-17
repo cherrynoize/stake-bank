@@ -1,0 +1,34 @@
+Bank smart contract
+-------------------
+
+Specifications:
+- rinkeby testnet (x)
+- rinkeby ATRAC tokens
+
+Functionalities: (x)
+- deployment: (x)
+ - create reward pool of ATRAC tokens = r (x)
+ - set period constant = T for reward calc (x)
+- runtime: (x)
+ - deposit amount of ATRAC = x (x)
+
+Dynamics: (x)
+- deployment at t0 (x)
+- reward pool R split into: (x)
+ - R1 = 20% / R - available after 2T (since deployment)
+ - R2 = 30% / R - after 3T
+ - R3 = 50% / R - after 4T
+- deposit allowed before 1T only (x)
+- from t0+T to t0+2T no withdrawals (failed transaction) (x)
+- withdrawals (their ratio in the pool): (x)
+ - t0+2T -> t0+3T: R1 pool
+ - t0+3T -> t0+4T: R1+R2 pools
+ - t0+4t: R1+R2+R3 pools (if no user after 4T: contract owner can withdraw now - no other way)
+
+Plus:
+- test suite (x)
+- instructions how-to run (x)
+- github
+
+- truffle deploy script (rinkeby) (x)
+- gui (x)
