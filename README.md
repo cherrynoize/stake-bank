@@ -36,7 +36,7 @@ $ firefox 127.0.0.1:3300
 
 ### Commands
 
-Deposit	- deposit amount
-Withdraw	- withdraw amount
-Pull		- transfer everything to owner
-Max		- input max balance value
+* Deposit	- deposit amount
+* Withdraw	- withdraw amount
+* Pull		- transfer everything to owner
+* Max		- input max balance value
